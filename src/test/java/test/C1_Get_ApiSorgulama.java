@@ -24,10 +24,10 @@ ve response suresinin 5 sn'den kisa oldugunu manuel olarak test ediniz.
 
     @Test
     public void get01(){
-        // 1-url belirleyip url adresine gideceğiz
+        // 1-url belirleyip url adresine gideceğiz (Endpoint Hazırlama)
         String url="https://restful-booker.herokuapp.com/booking/46";
         // 2-expected data açıkca verilirse belirlenecek
-        // 3-Actuasl Data alınır
+        // 3-Actual Data alınır
 
         Response response=given().when().get(url);
 
