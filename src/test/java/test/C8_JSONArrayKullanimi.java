@@ -26,6 +26,8 @@ public class C8_JSONArrayKullanimi {
                     }
                     ]
     }
+
+
      */
 
     @Test
@@ -43,6 +45,7 @@ public class C8_JSONArrayKullanimi {
         phoneNumbers.put(0,ceptel);
         phoneNumbers.put(1,evtel);
 
+
         JSONObject adres=new JSONObject();
         adres.put("streetAddress","naist street");
         adres.put("city","Nara");
@@ -56,7 +59,21 @@ public class C8_JSONArrayKullanimi {
         personalInfo.put("phoneNumbers",phoneNumbers);
 
 
-        System.out.println("personalInfo = " + personalInfo);
+       // System.out.println("personalInfo = " + personalInfo);
+        System.out.println("Kişi Adı: "+personalInfo.get("firstName"));
+        System.out.println("Kişi Soyadı: "+personalInfo.get("lastName"));
+        System.out.println("Kişi Yaşı: "+personalInfo.get("age"));
+        System.out.println("Kişi Adres-Sokak: "+personalInfo.getJSONObject("address").get("streetAddress"));
+        System.out.println("Kişi Adres-Şehir: "+personalInfo.getJSONObject("address").get("city"));
+        System.out.println("Kişi Adres-Posta Kodu: "+personalInfo.getJSONObject("address").get("postalCode"));
+        System.out.println("Kişi Telefon 1 Tür: "+personalInfo.getJSONArray("phoneNumbers").getJSONObject(0).get("type"));
+        System.out.println("Kişi Telefon 1 Number: "+personalInfo.getJSONArray("phoneNumbers").getJSONObject(0).get("number"));
+        System.out.println("Kişi Telefon 2 Tür: "+personalInfo.getJSONArray("phoneNumbers").getJSONObject(1).get("type"));
+        System.out.println("Kişi Telefon 2 Tür: "+personalInfo.getJSONArray("phoneNumbers").getJSONObject(1).get("number"));
+
+
+
+
 
 
 
