@@ -48,7 +48,7 @@ public class C16_BaseUrlQueryParams extends herOkuAppBaseURL {
     public void get02(){
           /*
         2- https://restful-booker.herokuapp.com/booking endpointine gerekli
-        Query parametrelerini yazarak “firstname” degeri “Eric” olan rezervasyon
+        Query parametrelerini yazarak “firstName” degeri “Eric” olan rezervasyon
         oldugunu test edecek bir GET request gonderdigimizde, donen response’un
         status code’unun 200 oldugunu ve “Eric” ismine sahip en az bir booking oldugunu test edin
     */
@@ -56,7 +56,8 @@ public class C16_BaseUrlQueryParams extends herOkuAppBaseURL {
         Response response=given().spec(specHerOkuApp).when().get("/{pp1}");
 
        // response.prettyPrint();
-       response.then().assertThat().statusCode(200).body("bookingid",notNullValue());
+       //response.then().assertThat().statusCode(200).body("bookingid",notNullValue());
+        response.then().assertThat().statusCode(200).body("bookingid",hasSize(greaterThan(0)));
 
 
 
