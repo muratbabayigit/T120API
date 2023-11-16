@@ -2,6 +2,8 @@ package testDatas;
 
 import org.json.JSONObject;
 
+import java.util.HashMap;
+
 public class TestDataJSONPlace {
 
    public int okStatusKodu=200;
@@ -51,6 +53,18 @@ public class TestDataJSONPlace {
      return reqBody;
     }
 
+
+    public HashMap<String,Object> requestBodyOlusturMAP(){
+        HashMap<String,Object> reqBody=new HashMap<>();
+
+
+        reqBody.put("title","Ali");
+        reqBody.put("body","Merhaba");
+        reqBody.put("userId",10.0);
+        reqBody.put("id",70.0);
+
+        return reqBody;
+}
 
 
 
