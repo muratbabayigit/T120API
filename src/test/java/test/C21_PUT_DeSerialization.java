@@ -1,20 +1,17 @@
 package test;
 
-import baseUrl.jsonPlaceBaseUrl;
+import baseUrl.JsonPlaceBaseUrl;
 import io.restassured.http.ContentType;
-import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
-import org.junit.Assert;
 import org.junit.Test;
 import testDatas.TestDataJSONPlace;
 
 import java.util.HashMap;
-import java.util.Objects;
 
 import static io.restassured.RestAssured.given;
 import static org.junit.Assert.assertEquals;
 
-public class C21_PUT_DeSerialization extends jsonPlaceBaseUrl {
+public class C21_PUT_DeSerialization extends JsonPlaceBaseUrl {
     /*
     /*
     https://jsonplaceholder.typicode.com/posts/70 url'ine asagidaki

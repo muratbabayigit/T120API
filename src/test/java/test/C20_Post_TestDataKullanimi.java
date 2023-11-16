@@ -1,18 +1,17 @@
 package test;
 
-import baseUrl.herOkuAppBaseURL;
+import baseUrl.HerOkuAppBaseURL;
 import io.restassured.http.ContentType;
 import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
 import org.json.JSONObject;
-import org.junit.Assert;
 import org.junit.Test;
 import testDatas.TestDataHerOkuApp;
 
 import static io.restassured.RestAssured.given;
 import static org.junit.Assert.assertEquals;
 
-public class C20_Post_TestDataKullanimi extends herOkuAppBaseURL {
+public class C20_Post_TestDataKullanimi extends HerOkuAppBaseURL {
     /*
     https://restful-booker.herokuapp.com/booking url’ine asagidaki body'ye sahip
     bir POST request gonderdigimizde donen response’un status kodunun 200 ve id haric

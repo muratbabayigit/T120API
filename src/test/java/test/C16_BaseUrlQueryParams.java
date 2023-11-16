@@ -1,14 +1,13 @@
 package test;
 
-import baseUrl.herOkuAppBaseURL;
+import baseUrl.HerOkuAppBaseURL;
 import io.restassured.response.Response;
-import org.hamcrest.Matchers;
 import org.junit.Test;
 
 import static io.restassured.RestAssured.given;
 import static org.hamcrest.Matchers.*;
 
-public class C16_BaseUrlQueryParams extends herOkuAppBaseURL {
+public class C16_BaseUrlQueryParams extends HerOkuAppBaseURL {
     // Class icinde 3 Test metodu olusturun ve asagidaki testleri yapin
 
     /*

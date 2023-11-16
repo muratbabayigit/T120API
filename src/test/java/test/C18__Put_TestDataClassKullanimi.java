@@ -1,18 +1,17 @@
 package test;
 
-import baseUrl.jsonPlaceBaseUrl;
+import baseUrl.JsonPlaceBaseUrl;
 import io.restassured.http.ContentType;
 import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
 import org.json.JSONObject;
-import org.junit.Assert;
 import org.junit.Test;
 import testDatas.TestDataJSONPlace;
 
 import static io.restassured.RestAssured.given;
 import static org.junit.Assert.assertEquals;
 
-public class C18__Put_TestDataClassKullanimi extends jsonPlaceBaseUrl {
+public class C18__Put_TestDataClassKullanimi extends JsonPlaceBaseUrl {
     /*
     https://jsonplaceholder.typicode.com/posts/70 url'ine asagidaki body’e sahip bir PUT
     request yolladigimizda donen response’in
